@@ -295,3 +295,92 @@ filter:blur(20px);opacity:.95}
   .hero-bottom-foil-img{bottom:300px!important;height:54px!important}
   .value-bottom-foil-img{height:54px!important;bottom:-20px!important}
 }
+
+/* === ECOSYSTEM SUBPAGE THEME — restrained VSculpt family language === */
+.source-content .hero{
+  min-height:430px;
+  display:flex;
+  align-items:center;
+  background:
+    linear-gradient(120deg,rgba(34,7,43,.93),rgba(25,6,31,.91)),
+    url("/assets/vsculpt/hero-purple-clouds.svg") center/cover no-repeat;
+  border-bottom:1px solid rgba(223,183,95,.38);
+}
+.source-content .hero:before{
+  background:
+    radial-gradient(ellipse at 18% 18%,rgba(174,120,190,.16),transparent 38%),
+    radial-gradient(ellipse at 78% 70%,rgba(98,48,111,.12),transparent 42%);
+  filter:blur(10px);
+}
+.source-content .hero:after{
+  content:"";
+  position:absolute;
+  right:clamp(20px,7vw,120px);
+  top:-16%;
+  width:56px;
+  height:132%;
+  border-radius:50%;
+  background:
+    linear-gradient(90deg,
+      rgba(87,47,17,.25) 0%,
+      #8d5422 12%,
+      #f1cf78 34%,
+      #fff0b1 47%,
+      #c98935 64%,
+      #744017 82%,
+      rgba(70,34,12,.15) 100%);
+  transform:rotate(9deg) skewY(-13deg);
+  opacity:.72;
+  filter:drop-shadow(0 9px 16px rgba(7,1,10,.22));
+  pointer-events:none;
+}
+.source-content .hero-copy{padding:92px 0 86px;max-width:900px}
+.source-content .hero h1{max-width:780px}
+.source-content .on-light{
+  background:
+    radial-gradient(circle at 88% 10%,rgba(216,173,91,.08),transparent 24%),
+    #fbf6ef;
+}
+.source-content .on-panel{
+  background:linear-gradient(145deg,#f4eadf,#eadac9);
+}
+.source-content section:not(.hero){position:relative}
+.source-content section:not(.hero):before{
+  content:"";
+  position:absolute;
+  left:0;right:0;top:0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(180,119,46,.34),transparent);
+}
+.source-content .narrow-copy h2,
+.source-content .section-head h2{
+  color:#2d1630;
+}
+.procedure-link-card,.signature-links a{
+  box-shadow:0 18px 45px -38px rgba(43,10,61,.42);
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+.procedure-link-card:hover,.signature-links a:hover{
+  transform:translateY(-3px);
+  border-color:rgba(216,173,91,.58);
+  box-shadow:0 22px 50px -36px rgba(43,10,61,.48);
+}
+.cta-band{
+  background:
+    linear-gradient(120deg,rgba(43,10,61,.96),rgba(20,7,24,.97)),
+    url("/assets/vsculpt/hero-purple-clouds.svg") center/cover no-repeat;
+  border:1px solid rgba(225,187,105,.22);
+  box-shadow:0 30px 70px -52px rgba(43,10,61,.75);
+}
+.site-footer{
+  background:
+    linear-gradient(120deg,rgba(20,7,24,.98),rgba(35,8,42,.98)),
+    url("/assets/vsculpt/hero-purple-clouds.svg") center/cover no-repeat;
+}
+@media(max-width:1020px){
+  .source-content .hero:after{right:18px;width:34px;opacity:.48}
+}
+@media(max-width:640px){
+  .source-content .hero{min-height:360px}
+  .source-content .hero:after{display:none}
+}
