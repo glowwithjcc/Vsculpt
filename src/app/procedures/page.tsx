@@ -1,0 +1,1 @@
+import { proceduresIndex } from "@/lib/content"; export const metadata={title:proceduresIndex.title,description:proceduresIndex.description};export default function Procedures(){return <div className="source-content" dangerouslySetInnerHTML={{__html:proceduresIndex.html}}/>}
