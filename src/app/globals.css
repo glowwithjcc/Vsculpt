@@ -74,7 +74,7 @@ filter:blur(20px);opacity:.95}
   width:13.6%;
   height:101.5%;
   z-index:5;
-  background:url("/assets/vsculpt/hero-s-foil.svg") center/100% 100% no-repeat;
+  background:url("/assets/vsculpt/hero-s-foil.webp") center/100% 100% no-repeat;
   pointer-events:none;
   filter:drop-shadow(0 6px 8px rgba(18,6,17,.22));
 }
@@ -86,7 +86,7 @@ filter:blur(20px);opacity:.95}
   width:102%;
   height:9.8%;
   z-index:6;
-  background:url("/assets/vsculpt/hero-bottom-foil.svg") center/100% 100% no-repeat;
+  background:url("/assets/vsculpt/hero-bottom-foil.webp") center/100% 100% no-repeat;
   pointer-events:none;
 }
 
@@ -105,7 +105,7 @@ filter:blur(20px);opacity:.95}
   width:102%;
   height:54px;
   z-index:4;
-  background:url("/assets/vsculpt/hero-bottom-foil.svg") center/100% 100% no-repeat;
+  background:url("/assets/vsculpt/hero-bottom-foil.webp") center/100% 100% no-repeat;
   transform:scaleY(.72);
   transform-origin:center bottom;
   pointer-events:none;
