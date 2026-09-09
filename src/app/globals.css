@@ -154,3 +154,51 @@ filter:blur(20px);opacity:.95}
   visibility:visible !important;
   display:block !important;
 }
+
+/* FINAL FOIL ELEMENTS — actual IMG layers, not CSS backgrounds */
+.hero-foil-img{
+  position:absolute;
+  top:-1%;
+  left:43.3%;
+  width:13.6%;
+  height:101.5%;
+  object-fit:fill;
+  z-index:9;
+  opacity:1;
+  visibility:visible;
+  pointer-events:none;
+  filter:drop-shadow(0 6px 8px rgba(18,6,17,.26));
+}
+.hero-bottom-foil-img{
+  position:absolute;
+  left:-1%;
+  bottom:8.2%;
+  width:102%;
+  height:9.8%;
+  object-fit:fill;
+  z-index:10;
+  opacity:1;
+  visibility:visible;
+  pointer-events:none;
+}
+.value-bottom-foil-img{
+  position:absolute;
+  left:-1%;
+  bottom:-3px;
+  width:102%;
+  height:54px;
+  object-fit:fill;
+  z-index:10;
+  opacity:1;
+  visibility:visible;
+  pointer-events:none;
+  transform:scaleY(.72);
+  transform-origin:center bottom;
+}
+/* Disable all prior background-foil implementations */
+.hero-foil-image,.hero-bottom-foil-image,.value-bottom-foil-image{display:none!important}
+@media(max-width:1020px){
+  .hero-foil-img{display:none}
+  .hero-bottom-foil-img{bottom:314px;height:56px}
+  .value-bottom-foil-img{height:44px}
+}
