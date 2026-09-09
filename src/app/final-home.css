@@ -1,0 +1,199 @@
+/* VSculpt final homepage reference match — authoritative overrides */
+
+.luxury-hero{
+  position:relative!important;
+  height:610px!important;
+  min-height:610px!important;
+  overflow:hidden!important;
+  background:#19061f!important;
+}
+
+.hero-photo{
+  position:absolute!important;
+  inset:0 0 0 52.5%!important;
+  width:auto!important;
+  height:100%!important;
+  overflow:hidden!important;
+  background:#b79b78!important;
+}
+.hero-photo:before,.hero-photo:after,.photo-wall-panel,.photo-chair,.photo-table{display:none!important}
+.hero-photo-image{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:54% 47%!important;
+  filter:none!important;
+  opacity:1!important;
+  image-rendering:auto!important;
+}
+
+.hero-purple-shape{
+  position:absolute!important;
+  inset:0 auto 0 0!important;
+  width:57.5%!important;
+  height:100%!important;
+  z-index:2!important;
+  clip-path:none!important;
+  background:
+    linear-gradient(120deg,rgba(51,9,64,.42),rgba(22,4,28,.28)),
+    url("/assets/vsculpt/hero-purple-clouds.svg") center/cover no-repeat!important;
+  background-blend-mode:multiply,normal!important;
+}
+
+.hero-content{
+  position:absolute!important;
+  left:max(7.2vw,72px)!important;
+  top:48px!important;
+  width:min(610px,40.5vw)!important;
+  z-index:12!important;
+}
+.hero-content h1{
+  font-size:clamp(58px,4.15vw,72px)!important;
+  line-height:.98!important;
+  margin-top:17px!important;
+}
+.hero-content>p{
+  max-width:505px!important;
+  font-size:18px!important;
+  line-height:1.48!important;
+  margin:24px 0 26px!important;
+}
+.hero-actions{margin-bottom:22px!important}
+.cred-line{max-width:510px!important}
+
+/* The actual supplied metallic S ribbon — this is a foreground surface, not a border. */
+.hero-foil-img{
+  display:block!important;
+  position:absolute!important;
+  left:47.7%!important;
+  top:-10%!important;
+  width:clamp(230px,15vw,310px)!important;
+  height:120%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  z-index:30!important;
+  opacity:1!important;
+  visibility:visible!important;
+  filter:drop-shadow(0 18px 20px rgba(12,3,13,.42))!important;
+  pointer-events:none!important;
+}
+
+/* The lower transition is intentionally broad and ribbon-like, never a 1px border. */
+.hero-bottom-foil-img{
+  display:block!important;
+  position:absolute!important;
+  left:-3%!important;
+  bottom:-56px!important;
+  width:106%!important;
+  height:176px!important;
+  object-fit:fill!important;
+  z-index:31!important;
+  opacity:1!important;
+  filter:drop-shadow(0 10px 15px rgba(15,5,13,.34))!important;
+  pointer-events:none!important;
+}
+
+.luxury-values{
+  position:relative!important;
+  height:186px!important;
+  min-height:186px!important;
+  overflow:visible!important;
+  background:
+    linear-gradient(100deg,rgba(25,5,31,.95),rgba(46,9,55,.96) 54%,rgba(22,5,28,.97)),
+    url("/assets/vsculpt/hero-purple-clouds.svg") center/cover no-repeat!important;
+}
+.value-grid{position:relative!important;z-index:5!important;padding-top:14px!important}
+.value-bottom-foil-img{
+  display:block!important;
+  position:absolute!important;
+  left:-3%!important;
+  bottom:-66px!important;
+  width:106%!important;
+  height:170px!important;
+  object-fit:fill!important;
+  z-index:31!important;
+  opacity:1!important;
+  filter:drop-shadow(0 10px 15px rgba(15,5,13,.30))!important;
+}
+
+.partnership{min-height:540px!important}
+.partnership-copy{padding-top:108px!important}
+
+@media(max-width:1020px){
+  .luxury-hero{
+    display:flex!important;
+    flex-direction:column!important;
+    height:auto!important;
+    min-height:0!important;
+    overflow:hidden!important;
+  }
+  .hero-purple-shape{
+    position:absolute!important;
+    inset:0 0 auto 0!important;
+    width:100%!important;
+    height:620px!important;
+  }
+  .hero-content{
+    position:relative!important;
+    left:auto!important;
+    top:auto!important;
+    width:auto!important;
+    max-width:none!important;
+    padding:48px 24px 42px!important;
+    z-index:12!important;
+  }
+  .hero-content h1{font-size:clamp(48px,9vw,62px)!important}
+  .hero-content>p{max-width:670px!important}
+  .hero-photo{
+    position:relative!important;
+    inset:auto!important;
+    width:100%!important;
+    height:420px!important;
+    min-height:420px!important;
+    order:3!important;
+  }
+  .hero-photo-image{object-position:50% 45%!important}
+  .hero-foil-img{
+    display:block!important;
+    left:auto!important;
+    right:-34px!important;
+    top:500px!important;
+    width:150px!important;
+    height:330px!important;
+    opacity:.88!important;
+  }
+  .hero-bottom-foil-img{
+    bottom:365px!important;
+    height:116px!important;
+  }
+  .luxury-values{
+    height:auto!important;
+    min-height:270px!important;
+    padding:48px 0 68px!important;
+  }
+  .value-grid{grid-template-columns:1fr 1fr!important;gap:32px 0!important}
+  .value-bottom-foil-img{height:116px!important;bottom:-51px!important}
+}
+
+@media(max-width:640px){
+  .hero-purple-shape{height:620px!important}
+  .hero-content{padding:38px 20px 38px!important}
+  .hero-content h1{font-size:46px!important}
+  .hero-content>p{font-size:17px!important}
+  .hero-actions{display:grid!important;grid-template-columns:1fr!important;width:100%!important}
+  .hero-actions .btn{width:100%!important;max-width:none!important}
+  .hero-photo{height:330px!important;min-height:330px!important}
+  .hero-photo-image{object-position:50% 43%!important}
+  .hero-foil-img{
+    right:-42px!important;
+    top:535px!important;
+    width:126px!important;
+    height:280px!important;
+  }
+  .hero-bottom-foil-img{bottom:286px!important;height:94px!important}
+  .luxury-values{padding:42px 0 72px!important}
+  .value-grid{grid-template-columns:1fr!important;gap:24px!important}
+  .value+.value:before{display:none!important}
+  .value-bottom-foil-img{height:98px!important;bottom:-43px!important}
+}
