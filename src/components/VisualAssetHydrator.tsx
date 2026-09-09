@@ -22,10 +22,6 @@ export default function VisualAssetHydrator() {
       "/assets/vsculpt/bin/foil_s_0.txt",
       "/assets/vsculpt/bin/foil_s_1.txt",
     ], "image/webp");
-
-    hydrate(".hero-photo-image", [
-      "/assets/vsculpt/hero-dr-charan-reference.webp.b64.txt",
-    ], "image/webp");
   }, []);
 
   return null;
