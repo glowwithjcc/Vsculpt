@@ -1,43 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 180" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 210" preserveAspectRatio="none">
 <defs>
   <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#4a1d06"/>
-    <stop offset=".14" stop-color="#9a5218"/>
-    <stop offset=".31" stop-color="#e1aa43"/>
-    <stop offset=".45" stop-color="#fff0a4"/>
-    <stop offset=".56" stop-color="#d18d2d"/>
-    <stop offset=".72" stop-color="#7b360d"/>
-    <stop offset=".90" stop-color="#f3ca68"/>
-    <stop offset="1" stop-color="#4d1d06"/>
+    <stop offset="0" stop-color="#2f1104"/>
+    <stop offset=".10" stop-color="#6d300b"/>
+    <stop offset=".24" stop-color="#b96f20"/>
+    <stop offset=".39" stop-color="#ecc35e"/>
+    <stop offset=".48" stop-color="#fff3ad"/>
+    <stop offset=".57" stop-color="#cf8b2d"/>
+    <stop offset=".73" stop-color="#72320c"/>
+    <stop offset=".88" stop-color="#e4b44f"/>
+    <stop offset="1" stop-color="#371404"/>
   </linearGradient>
-  <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#fff8cf" stop-opacity=".92"/>
-    <stop offset=".5" stop-color="#fff8cf" stop-opacity=".15"/>
-    <stop offset="1" stop-color="#fff8cf" stop-opacity="0"/>
+  <linearGradient id="highlight" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff8c9" stop-opacity=".98"/>
+    <stop offset=".28" stop-color="#fff0a4" stop-opacity=".64"/>
+    <stop offset=".64" stop-color="#fff0a4" stop-opacity=".08"/>
+    <stop offset="1" stop-color="#fff0a4" stop-opacity="0"/>
   </linearGradient>
-  <filter id="shadow" x="-5%" y="-150%" width="110%" height="400%">
-    <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#17070d" flood-opacity=".44"/>
+  <linearGradient id="underside" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#8a4515"/>
+    <stop offset="1" stop-color="#3b1605"/>
+  </linearGradient>
+  <filter id="shadow" x="-6%" y="-80%" width="112%" height="300%">
+    <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#14060c" flood-opacity=".48"/>
   </filter>
 </defs>
 
-<!-- broad ribbon, not a border -->
-<path d="M-40 65
- C240 122 500 42 785 78
- C1065 114 1325 42 1640 70
- L1640 116
- C1320 87 1070 150 782 118
- C500 88 235 158 -40 106 Z"
- fill="url(#gold)" filter="url(#shadow)"/>
+<!-- substantial underside gives the ribbon thickness -->
+<path d="M-45 57
+ C250 139 490 38 790 86
+ C1090 134 1320 35 1645 72
+ L1645 161
+ C1320 118 1080 201 782 156
+ C485 112 235 202 -45 126 Z"
+ fill="url(#underside)" opacity=".96" filter="url(#shadow)"/>
 
-<!-- bright rolled top lip -->
-<path d="M-30 66
- C245 113 500 39 786 74
- C1067 108 1320 39 1630 67"
- fill="none" stroke="url(#shine)" stroke-width="12" stroke-linecap="round"/>
+<!-- broad metallic face -->
+<path d="M-45 42
+ C250 119 492 24 790 69
+ C1087 114 1320 20 1645 55
+ L1645 137
+ C1325 96 1085 176 784 133
+ C485 91 237 178 -45 108 Z"
+ fill="url(#gold)"/>
 
-<!-- darker lower rolled edge -->
-<path d="M-30 105
- C245 153 505 84 782 116
- C1068 148 1320 84 1630 113"
- fill="none" stroke="#562408" stroke-width="5.5" stroke-linecap="round" opacity=".8"/>
+<!-- polished top fold -->
+<path d="M-35 46
+ C252 112 495 29 792 70
+ C1091 111 1323 29 1635 58"
+ fill="none" stroke="url(#highlight)" stroke-width="18" stroke-linecap="round" opacity=".94"/>
+
+<!-- central reflected streak -->
+<path d="M-20 71
+ C270 126 505 49 795 88
+ C1082 127 1325 51 1625 78"
+ fill="none" stroke="#f6d577" stroke-opacity=".46" stroke-width="8" stroke-linecap="round"/>
+
+<!-- lower folded edge -->
+<path d="M-30 108
+ C250 177 490 95 785 133
+ C1085 171 1325 97 1630 132"
+ fill="none" stroke="#572207" stroke-width="8" stroke-linecap="round" opacity=".82"/>
 </svg>
