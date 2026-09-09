@@ -3,9 +3,13 @@ import { useState } from "react";
 import Link from "next/link";
 
 const links = [
-  ["Procedures", "/procedures"], ["Approach", "/approach"], ["About", "/about"],
-  ["Gallery", "/gallery"], ["Gender-Affirming Care", "/gender-affirming-care"],
-  ["Resources", "/resources"], ["Contact", "/contact"]
+  ["Procedures", "/procedures"],
+  ["Approach", "/approach"],
+  ["About", "https://vsculpt-human-care.lovable.app/"],
+  ["Dr. Charan", "https://drcharanjc.vsculpt.in/"],
+  ["Gallery", "/gallery"],
+  ["Resources", "/resources"],
+  ["Contact", "/contact"]
 ] as const;
 
 export default function Header(){
