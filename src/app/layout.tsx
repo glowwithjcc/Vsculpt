@@ -3,6 +3,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://vsculpt.in"),
   title: {default:"VSculpt — Plastic, Cosmetic & Gender-Affirming Surgery in Chennai", template:"%s | VSculpt"},
