@@ -202,3 +202,96 @@ filter:blur(20px);opacity:.95}
   .hero-bottom-foil-img{bottom:314px;height:56px}
   .value-bottom-foil-img{height:44px}
 }
+
+/* APPROVED REFERENCE ALIGNMENT */
+.luxury-hero{
+  height:760px;
+  background:#21121f;
+}
+.hero-photo{
+  position:absolute;
+  inset:0 0 0 52%;
+  z-index:1;
+  overflow:hidden;
+  background:#9d7f61;
+}
+.hero-photo-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:50% 48%;
+  display:block;
+  filter:saturate(.92) contrast(1.02) brightness(.98);
+}
+.photo-wall-panel,.photo-chair,.photo-table{display:none!important}
+.hero-purple-shape{
+  width:55%!important;
+  clip-path:none!important;
+  z-index:2!important;
+}
+.hero-foil-img{
+  left:48.8%!important;
+  top:-1.5%!important;
+  width:7.7%!important;
+  height:103%!important;
+  object-fit:fill!important;
+  z-index:11!important;
+  filter:drop-shadow(0 7px 10px rgba(12,4,12,.32))!important;
+}
+.hero-bottom-foil-img{
+  left:-1.5%!important;
+  bottom:-17px!important;
+  width:103%!important;
+  height:82px!important;
+  object-fit:fill!important;
+  z-index:12!important;
+}
+.hero-content{
+  left:max(8.4vw,108px)!important;
+  top:72px!important;
+  width:560px!important;
+}
+.hero-content h1{
+  font-size:72px!important;
+  line-height:.97!important;
+  letter-spacing:-.024em!important;
+}
+.hero-content>p{
+  max-width:495px!important;
+  font-size:20px!important;
+  line-height:1.48!important;
+}
+.meet-avatar{
+  object-fit:cover!important;
+  background:none!important;
+}
+.luxury-values{
+  height:190px!important;
+  padding:0!important;
+  margin:0!important;
+}
+.value-grid{
+  padding-top:0!important;
+}
+.value-bottom-foil-img{
+  left:-1.5%!important;
+  bottom:-28px!important;
+  width:103%!important;
+  height:82px!important;
+  object-fit:fill!important;
+  transform:none!important;
+  z-index:12!important;
+}
+.partnership{
+  min-height:545px!important;
+}
+.partnership-copy{
+  padding-top:108px!important;
+}
+@media(max-width:1020px){
+  .hero-photo{inset:auto 0 0 0;height:320px}
+  .hero-photo-image{object-position:50% 40%}
+  .hero-purple-shape{width:100%!important}
+  .hero-bottom-foil-img{bottom:300px!important;height:54px!important}
+  .value-bottom-foil-img{height:54px!important;bottom:-20px!important}
+}
