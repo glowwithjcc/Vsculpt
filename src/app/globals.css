@@ -460,3 +460,165 @@ html,body{max-width:100%;overflow-x:hidden}
   .meet-row{width:100%!important}
   .cred-line{font-size:8.5px!important}
 }
+
+/* FINAL RESPONSIVE + REAL FOIL OVERRIDE */
+.hero-foil-img,
+.hero-bottom-foil-img,
+.value-bottom-foil-img{
+  display:block!important;
+  opacity:1!important;
+  visibility:visible!important;
+  pointer-events:none!important;
+}
+.hero-foil-img{
+  position:absolute!important;
+  left:48.6%!important;
+  top:-2%!important;
+  width:9.2%!important;
+  height:104%!important;
+  z-index:20!important;
+  object-fit:fill!important;
+  filter:drop-shadow(0 10px 14px rgba(12,4,12,.38))!important;
+}
+.hero-bottom-foil-img{
+  position:absolute!important;
+  left:-2%!important;
+  width:104%!important;
+  height:94px!important;
+  bottom:-28px!important;
+  z-index:21!important;
+  object-fit:fill!important;
+}
+.value-bottom-foil-img{
+  position:absolute!important;
+  left:-2%!important;
+  width:104%!important;
+  height:86px!important;
+  bottom:-34px!important;
+  z-index:21!important;
+  object-fit:fill!important;
+  transform:none!important;
+}
+
+@media (max-width: 1020px){
+  .site-header{height:68px!important}
+  .header-inner{width:calc(100% - 32px)!important}
+  .nav-links{display:none!important}
+  .nav-cta .btn{display:none!important}
+  .nav-toggle{display:block!important;font-size:26px!important}
+  .logo-text .name{font-size:20px!important}
+  .logo-text .tag{font-size:7px!important}
+  .brand-flame{transform:scale(.88);transform-origin:left center}
+
+  .luxury-hero{
+    display:flex!important;
+    flex-direction:column!important;
+    height:auto!important;
+    min-height:0!important;
+    padding:0!important;
+    overflow:hidden!important;
+    background:#17051d!important;
+  }
+  .hero-purple-shape{
+    position:absolute!important;
+    inset:0!important;
+    width:100%!important;
+    height:620px!important;
+    z-index:1!important;
+    clip-path:none!important;
+  }
+  .hero-content{
+    position:relative!important;
+    left:auto!important;
+    top:auto!important;
+    width:auto!important;
+    max-width:none!important;
+    z-index:5!important;
+    padding:48px 24px 38px!important;
+    margin:0!important;
+  }
+  .hero-content h1{
+    font-size:clamp(46px,9vw,62px)!important;
+    line-height:.98!important;
+    margin-top:16px!important;
+  }
+  .hero-content>p{
+    max-width:680px!important;
+    font-size:18px!important;
+    line-height:1.5!important;
+  }
+  .hero-actions{
+    width:100%!important;
+    gap:12px!important;
+  }
+  .hero-photo{
+    position:relative!important;
+    inset:auto!important;
+    width:100%!important;
+    height:390px!important;
+    min-height:390px!important;
+    order:3!important;
+    z-index:2!important;
+  }
+  .hero-photo-image{
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+    object-position:center 35%!important;
+  }
+  .hero-foil-img{display:none!important}
+  .hero-bottom-foil-img{
+    left:-3%!important;
+    bottom:360px!important;
+    width:106%!important;
+    height:64px!important;
+    z-index:8!important;
+  }
+  .luxury-values{
+    height:auto!important;
+    min-height:0!important;
+    padding:46px 0 58px!important;
+  }
+  .value-grid{
+    grid-template-columns:1fr 1fr!important;
+    gap:34px 0!important;
+  }
+  .value-bottom-foil-img{
+    height:58px!important;
+    bottom:-24px!important;
+  }
+}
+
+@media (max-width: 640px){
+  .container{width:calc(100% - 32px)!important}
+  .site-header{height:64px!important}
+  .logo-text .tag{display:none!important}
+  .hero-purple-shape{height:610px!important}
+  .hero-content{padding:38px 20px 34px!important}
+  .hero-content h1{font-size:46px!important}
+  .hero-content>p{font-size:17px!important}
+  .hero-actions{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+  }
+  .hero-actions .btn{
+    width:100%!important;
+    max-width:none!important;
+  }
+  .meet-row{width:100%!important}
+  .cred-line{font-size:8.5px!important}
+  .hero-photo{
+    height:300px!important;
+    min-height:300px!important;
+  }
+  .hero-bottom-foil-img{
+    bottom:274px!important;
+    height:54px!important;
+  }
+  .value-grid{
+    grid-template-columns:1fr!important;
+    gap:26px!important;
+  }
+  .value+.value:before{display:none!important}
+  .value-bottom-foil-img{height:52px!important}
+}
