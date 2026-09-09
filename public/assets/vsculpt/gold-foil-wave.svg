@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 96" preserveAspectRatio="none">
+<defs>
+  <linearGradient id="gold" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#6b320f"/>
+    <stop offset=".17" stop-color="#d59637"/>
+    <stop offset=".34" stop-color="#fff0aa"/>
+    <stop offset=".48" stop-color="#e9ba56"/>
+    <stop offset=".70" stop-color="#9b521d"/>
+    <stop offset=".86" stop-color="#f3d072"/>
+    <stop offset="1" stop-color="#5a290c"/>
+  </linearGradient>
+  <filter id="shadow" x="-5%" y="-200%" width="110%" height="500%">
+    <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#1a0810" flood-opacity=".32"/>
+  </filter>
+</defs>
+<path d="M-20 43 C260 77 500 18 785 48 C1080 80 1315 27 1620 51" fill="none" stroke="#3f1b07" stroke-width="34" stroke-linecap="round" filter="url(#shadow)"/>
+<path d="M-20 43 C260 77 500 18 785 48 C1080 80 1315 27 1620 51" fill="none" stroke="url(#gold)" stroke-width="28" stroke-linecap="round"/>
+<path d="M-20 39 C260 69 500 13 785 42 C1080 72 1315 22 1620 45" fill="none" stroke="#fff2b4" stroke-opacity=".75" stroke-width="4.2" stroke-linecap="round"/>
+</svg>
