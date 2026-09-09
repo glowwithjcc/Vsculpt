@@ -1,19 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 96" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 180" preserveAspectRatio="none">
 <defs>
-  <linearGradient id="gold" x1="0" x2="0" y1="0" y2="1">
-    <stop offset="0" stop-color="#6b320f"/>
-    <stop offset=".17" stop-color="#d59637"/>
-    <stop offset=".34" stop-color="#fff0aa"/>
-    <stop offset=".48" stop-color="#e9ba56"/>
-    <stop offset=".70" stop-color="#9b521d"/>
-    <stop offset=".86" stop-color="#f3d072"/>
-    <stop offset="1" stop-color="#5a290c"/>
+  <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#4a1d06"/>
+    <stop offset=".14" stop-color="#9a5218"/>
+    <stop offset=".31" stop-color="#e1aa43"/>
+    <stop offset=".45" stop-color="#fff0a4"/>
+    <stop offset=".56" stop-color="#d18d2d"/>
+    <stop offset=".72" stop-color="#7b360d"/>
+    <stop offset=".90" stop-color="#f3ca68"/>
+    <stop offset="1" stop-color="#4d1d06"/>
   </linearGradient>
-  <filter id="shadow" x="-5%" y="-200%" width="110%" height="500%">
-    <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#1a0810" flood-opacity=".32"/>
+  <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff8cf" stop-opacity=".92"/>
+    <stop offset=".5" stop-color="#fff8cf" stop-opacity=".15"/>
+    <stop offset="1" stop-color="#fff8cf" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="shadow" x="-5%" y="-150%" width="110%" height="400%">
+    <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#17070d" flood-opacity=".44"/>
   </filter>
 </defs>
-<path d="M-20 43 C260 77 500 18 785 48 C1080 80 1315 27 1620 51" fill="none" stroke="#3f1b07" stroke-width="34" stroke-linecap="round" filter="url(#shadow)"/>
-<path d="M-20 43 C260 77 500 18 785 48 C1080 80 1315 27 1620 51" fill="none" stroke="url(#gold)" stroke-width="28" stroke-linecap="round"/>
-<path d="M-20 39 C260 69 500 13 785 42 C1080 72 1315 22 1620 45" fill="none" stroke="#fff2b4" stroke-opacity=".75" stroke-width="4.2" stroke-linecap="round"/>
+
+<!-- broad ribbon, not a border -->
+<path d="M-40 65
+ C240 122 500 42 785 78
+ C1065 114 1325 42 1640 70
+ L1640 116
+ C1320 87 1070 150 782 118
+ C500 88 235 158 -40 106 Z"
+ fill="url(#gold)" filter="url(#shadow)"/>
+
+<!-- bright rolled top lip -->
+<path d="M-30 66
+ C245 113 500 39 786 74
+ C1067 108 1320 39 1630 67"
+ fill="none" stroke="url(#shine)" stroke-width="12" stroke-linecap="round"/>
+
+<!-- darker lower rolled edge -->
+<path d="M-30 105
+ C245 153 505 84 782 116
+ C1068 148 1320 84 1630 113"
+ fill="none" stroke="#562408" stroke-width="5.5" stroke-linecap="round" opacity=".8"/>
 </svg>
