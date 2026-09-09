@@ -622,3 +622,127 @@ html,body{max-width:100%;overflow-x:hidden}
   .value+.value:before{display:none!important}
   .value-bottom-foil-img{height:52px!important}
 }
+
+/* REFERENCE MATCH — FOIL SURFACES + SHARP HERO */
+.luxury-hero{
+  height:610px!important;
+  background:#1b091f!important;
+}
+.hero-photo{
+  inset:0 0 0 55%!important;
+  background:#b59a79!important;
+}
+.hero-photo-image{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:50% 50%!important;
+  filter:none!important;
+  image-rendering:auto!important;
+  transform:translateZ(0);
+}
+.hero-purple-shape{
+  width:58%!important;
+}
+.hero-content{
+  left:max(7.2vw,72px)!important;
+  top:48px!important;
+  width:min(620px,43vw)!important;
+}
+.hero-content h1{
+  font-size:clamp(58px,4.3vw,72px)!important;
+  line-height:.98!important;
+}
+.hero-content>p{
+  font-size:18px!important;
+  max-width:500px!important;
+}
+.hero-foil-img{
+  left:48.7%!important;
+  top:-6%!important;
+  width:clamp(128px,10vw,176px)!important;
+  height:112%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  z-index:30!important;
+  filter:drop-shadow(0 14px 18px rgba(12,4,12,.42))!important;
+}
+.hero-bottom-foil-img{
+  left:-1.5%!important;
+  bottom:-48px!important;
+  width:103%!important;
+  height:148px!important;
+  object-fit:fill!important;
+  z-index:31!important;
+  filter:drop-shadow(0 8px 12px rgba(12,4,12,.34))!important;
+}
+.luxury-values{
+  min-height:178px!important;
+  height:178px!important;
+  overflow:visible!important;
+}
+.value-grid{
+  position:relative!important;
+  z-index:4!important;
+}
+.value-bottom-foil-img{
+  left:-1.5%!important;
+  bottom:-62px!important;
+  width:103%!important;
+  height:148px!important;
+  object-fit:fill!important;
+  z-index:31!important;
+  filter:drop-shadow(0 8px 12px rgba(12,4,12,.28))!important;
+}
+.partnership{
+  min-height:520px!important;
+}
+.partnership-copy{
+  padding-top:94px!important;
+}
+
+@media(max-width:1020px){
+  .luxury-hero{
+    height:auto!important;
+    min-height:0!important;
+    padding:0!important;
+  }
+  .hero-content{
+    left:auto!important;
+    top:auto!important;
+    width:auto!important;
+    padding:46px 24px 38px!important;
+  }
+  .hero-photo{
+    position:relative!important;
+    inset:auto!important;
+    height:420px!important;
+    min-height:420px!important;
+    width:100%!important;
+  }
+  .hero-photo-image{
+    object-position:50% 45%!important;
+  }
+  .hero-foil-img{
+    display:none!important;
+  }
+  .hero-bottom-foil-img{
+    bottom:378px!important;
+    height:105px!important;
+  }
+  .luxury-values{
+    height:auto!important;
+    min-height:260px!important;
+    padding:48px 0 68px!important;
+  }
+  .value-bottom-foil-img{
+    bottom:-50px!important;
+    height:110px!important;
+  }
+}
+@media(max-width:640px){
+  .hero-content h1{font-size:46px!important}
+  .hero-photo{height:340px!important;min-height:340px!important}
+  .hero-bottom-foil-img{bottom:305px!important;height:88px!important}
+  .value-bottom-foil-img{height:92px!important;bottom:-44px!important}
+}
